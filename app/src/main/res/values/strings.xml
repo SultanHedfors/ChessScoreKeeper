@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">myapp</string>
+    <!--teams names-->
+    <string name="white_textView">WHITE</string>
+    <string name="black_textView">BLACK</string>
+    <!--pieces captured views-->
+    <string name="black_pieces_captured_textView">Black pieces captured:</string>
+    <string name="white_pieces_captured_textView">White pieces captured:</string>
+    <!--who's winning view-->
+    <string name="it_s_a_draw_textView">It\'s a draw!</string>
+    <!--reset-->
+    <string name="reset">RESET</string>
+    <!--score views-->
+    <string name="_0_textView">0</string>
+    <string name="dash">-</string>
+    <string name="_0_textView2">0</string>
+    <!--strings used in java-->
+    <string name="dif_mes_point">point</string>
+    <string name="dif_mes_points">points</string>
+    <string name="dim_mes_is">is</string>
+    <string name="dif_mes_ahead">ahead!</string>
+    <string name="dif_mes_draw">It\'s a draw!</string>
+    <string name="Black">Black</string>
+    <string name="White">White</string>
+</resources>

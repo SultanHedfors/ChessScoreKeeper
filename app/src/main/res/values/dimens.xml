@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Team textView layout dimens-->
+    <dimen name="Team_textView_marginTop">16dp</dimen>
+    <dimen name="Team_textView_marginBottom">10dp</dimen>
+    <!--Team textView dimens-->
+    <dimen name="Team_textView_textSize">40sp</dimen>
+    <dimen name="White_textView_marginLeft">8dp</dimen>
+    <dimen name="white_textView_marginRight">22dp</dimen>
+    <dimen name="black_textView_marginRight">16dp</dimen>
+    <dimen name="black_textView_marginLeft">24dp</dimen>
+    <!--Line1 dimens-->
+    <dimen name="line_width">4dp</dimen>
+    <dimen name="line_marginRight">16dp</dimen>
+    <dimen name="line_marginLeft">16dp</dimen>
+    <dimen name="line_marginBottom">8dp</dimen>
+    <!--Line2 dimens-->
+    <!--Pieces Captured dimens-->
+    <dimen name="pieces_captured_textView_marginLeft">24dp</dimen>
+    <!--Big Layout dimens-->
+    <dimen name="big_layout_height">340dp</dimen>
+    <dimen name="Big_layout_margin_left">16dp</dimen>
+    <dimen name="big_layout_margin_right">16dp</dimen>
+    <dimen name="big_layout_margin_top">8dp</dimen>
+    <!--Minus_Piece_Plus Layout dimens-->
+    <dimen name="Minus_Piece_Plus_heitgh">59dp</dimen>
+    <dimen name="Minus_Piece_Plus_marginBottom">8dp</dimen>
+    <!--Piece Layout dimens-->
+    <dimen name="piece_layout_width">80dp</dimen>
+    <dimen name="piece_layout_paddingLeft">16dp</dimen>
+    <dimen name="piece_layout_paddingRight">16dp</dimen>
+    <!--Piece Scale dimens-->
+    <item name="reg_piece_scale_xy_dimens" format="float" type="dimen">0.7</item>
+    <item name="queen_scale_xy_dimens" format="float" type="dimen">0.8</item>
+    <!--Piece alphas-->
+    <item name="lower_alpha" format="float" type="dimen">0.2</item>
+    <item name="higher_alpha" format="float" type="dimen">1.0</item>
+    <!--Score layout dimens-->
+    <dimen name="score_main_layout_textView_height">32dp</dimen>
+    <dimen name="score_main_layout_textView_marginLeft">16dp</dimen>
+    <dimen name="score_main_layout_textView_marginRight">16dp</dimen>
+    <!--Score textView dimens-->
+    <dimen name="score_textView_textSize">25sp</dimen>
+    <!--'who's winning' textView dimens-->
+    <dimen name="whos_winning_textSize">14sp</dimen>
+    <dimen name="whos_winning_marginBottom">8dp</dimen>
+    <!--Reset button dimens-->
+    <dimen name="reset_height">30dp</dimen>
+    <dimen name="reset_textSize">16sp</dimen>
+    <dimen name="line2_marginLeft">8dp</dimen>
+    <dimen name="line2_marginRight">8dp</dimen>
+
+
+</resources>

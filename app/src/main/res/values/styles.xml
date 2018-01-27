@@ -1,0 +1,180 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <!--Team textView layout styles-->
+    <style name="layout_team_textView_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/Team_textView_marginTop</item>
+
+
+    </style>
+    <!--Team textView styles-->
+    <style name="team_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/Team_textView_textSize</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">serif</item>
+
+    </style>
+    <!--Line1 styles-->
+    <style name="line1_style">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_width</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginRight">@dimen/line_marginRight</item>
+        <item name="android:layout_marginBottom">@dimen/line_marginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/line_marginLeft</item>
+
+    </style>
+    <!--Line2 styles-->
+    <style name="line2_style">
+
+        <item name="android:layout_width">@dimen/line_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/line2_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/line2_marginRight</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+    <!--Pieces Captured styles-->
+    <style name="pieces_captured_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">casual</item>
+
+
+    </style>
+    <!--Big layout style-->
+    <style name="big_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/big_layout_height</item>
+        <item name="android:layout_marginRight">@dimen/big_layout_margin_right</item>
+        <item name="android:layout_marginLeft">@dimen/Big_layout_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/big_layout_margin_top</item>
+
+
+    </style>
+    <!--Vertical layout style-->
+    <style name="vertical_layout_style">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--button minus style-->
+    <style name="button_minus_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:alpha">@dimen/lower_alpha</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:src">@drawable/minus_button</item>
+
+    </style>
+    <!--button plus style-->
+    <style name="button_plus_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:alpha">@dimen/higher_alpha</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:src">@drawable/plus_button</item>
+
+    </style>
+    <!--Minus_Piece_Plus Layout styles-->
+    <style name="minus_piece_plus_layout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/Minus_Piece_Plus_heitgh</item>
+        <item name="android:layout_marginBottom">@dimen/Minus_Piece_Plus_marginBottom</item>
+
+    </style>
+    <!--Piece Layout styles-->
+    <style name="piece_layout_style">
+
+        <item name="android:layout_width">@dimen/piece_layout_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/piece_layout_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/piece_layout_paddingRight</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+    <!--regPiece styles-->
+    <style name="reg_piece_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:alpha">@dimen/lower_alpha</item>
+        <item name="android:scaleX">@dimen/reg_piece_scale_xy_dimens</item>
+        <item name="android:scaleY">@dimen/reg_piece_scale_xy_dimens</item>
+    </style>
+    <!--queen styles-->
+    <style name="queen_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:alpha">@dimen/lower_alpha</item>
+        <item name="android:scaleX">@dimen/queen_scale_xy_dimens</item>
+        <item name="android:scaleY">@dimen/queen_scale_xy_dimens</item>
+    </style>
+    <!--Score layout styles-->
+    <style name="score_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/score_main_layout_textView_height</item>
+        <item name="android:layout_marginRight">@dimen/score_main_layout_textView_marginRight</item>
+        <item name="android:layout_marginLeft">@dimen/score_main_layout_textView_marginLeft</item>
+
+    </style>
+    <!--Score textView styles-->
+    <style name="score_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/score_textView_textSize</item>
+
+    </style>
+    <!--'who's winning' textView styles-->
+    <style name="whos_winning_textView_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/whos_winning_marginBottom</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/whos_winning_textSize</item>
+
+    </style>
+    <!--Reset button styles-->
+    <style name="reset_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/reset_height</item>
+        <item name="android:textSize">@dimen/reset_textSize</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+</resources>
