@@ -644,7 +644,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             p = getString(R.string.dif_mes_points);
 
         }
-        message = who_is_winning + getString(R.string.dim_mes_is) + d + " " + p + getString(R.string.dif_mes_ahead);
+        message = who_is_winning + " " + getString(R.string.dim_mes_is) + " " + d + " " + p + " " + getString(R.string.dif_mes_ahead);
         if (difference == 0) {
             message = getString(R.string.dif_mes_draw);
         }
