@@ -9,15 +9,11 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-
 import static java.lang.Math.abs;
 import static java.lang.String.valueOf;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-
     //max piece numbers
     static int max_pawns = 8;
     static int max_rooks_bishops_knights = 2;
@@ -63,12 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ArrayList<ImageButton> img_plus;
     ArrayList<ImageButton> img_minus;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         img_ids = new ArrayList<String>();
         img_minus = new ArrayList<ImageButton>();
         img_plus = new ArrayList<ImageButton>();
@@ -118,108 +112,68 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         img_minus.add((ImageButton) findViewById(R.id.minus_white_knight));
         img_minus.add((ImageButton) findViewById(R.id.minus_white_pawn));
 
-
         TypedValue outValue = new TypedValue();
-
         getResources().getValue(R.dimen.reg_piece_scale_xy_dimens, outValue, true);
         reg_piece_xy_dimens = outValue.getFloat();
-
         getResources().getValue(R.dimen.higher_alpha, outValue, true);
         higher_alpha = outValue.getFloat();
-
         getResources().getValue(R.dimen.lower_alpha, outValue, true);
         lower_alpha = outValue.getFloat();
-
-
+        
         //minus white
         ImageButton minus_white_queen = findViewById(R.id.minus_white_queen);
         minus_white_queen.setOnClickListener(this);
-
         ImageButton minus_white_rook = findViewById(R.id.minus_white_rook);
         minus_white_rook.setOnClickListener(this);
-
         ImageButton minus_white_bishop = findViewById(R.id.minus_white_bishop);
         minus_white_bishop.setOnClickListener(this);
-
-
         ImageButton minus_white_knight = findViewById(R.id.minus_white_knight);
         minus_white_knight.setOnClickListener(this);
-
-
         ImageButton minus_white_pawn = findViewById(R.id.minus_white_pawn);
         minus_white_pawn.setOnClickListener(this);
 
-
-        //minus black
-
+//minus blac
         ImageButton minus_black_queen = findViewById(R.id.minus_black_queen);
         minus_black_queen.setOnClickListener(this);
-
         ImageButton minus_black_rook = findViewById(R.id.minus_black_rook);
         minus_black_rook.setOnClickListener(this);
-
         ImageButton minus_black_bishop = findViewById(R.id.minus_black_bishop);
         minus_black_bishop.setOnClickListener(this);
-
-
         ImageButton minus_black_knight = findViewById(R.id.minus_black_knight);
         minus_black_knight.setOnClickListener(this);
-
-
         ImageButton minus_black_pawn = findViewById(R.id.minus_black_pawn);
         minus_black_pawn.setOnClickListener(this);
-
-
+        
         //plus white
 
         ImageButton plus_white_queen = findViewById(R.id.plus_white_queen);
         plus_white_queen.setOnClickListener(this);
-
         ImageButton plus_white_rook = findViewById(R.id.plus_white_rook);
         plus_white_rook.setOnClickListener(this);
-
         ImageButton plus_white_bishop = findViewById(R.id.plus_white_bishop);
         plus_white_bishop.setOnClickListener(this);
-
-
         ImageButton plus_white_knight = findViewById(R.id.plus_white_knight);
         plus_white_knight.setOnClickListener(this);
-
-
         ImageButton plus_white_pawn = findViewById(R.id.plus_white_pawn);
         plus_white_pawn.setOnClickListener(this);
-
-
+        
         //plus black
 
         ImageButton plus_black_queen = findViewById(R.id.plus_black_queen);
         plus_black_queen.setOnClickListener(this);
-
         ImageButton plus_black_rook = findViewById(R.id.plus_black_rook);
         plus_black_rook.setOnClickListener(this);
-
         ImageButton plus_black_bishop = findViewById(R.id.plus_black_bishop);
         plus_black_bishop.setOnClickListener(this);
-
-
         ImageButton plus_black_knight = findViewById(R.id.plus_black_knight);
         plus_black_knight.setOnClickListener(this);
-
-
         ImageButton plus_black_pawn = findViewById(R.id.plus_black_pawn);
         plus_black_pawn.setOnClickListener(this);
-
-
         Button reset = findViewById(R.id.reset_button);
         reset.setOnClickListener(this);
-
     }
-
-
     @Override
     public void onClick(View view) {
-
-
         switch (view.getId()) {
 //minus black
             case R.id.minus_black_queen:
@@ -310,7 +264,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     blackQueensNumber--;
                     increase_alpha(R.id.black_queen_image);
                     check_or_fix_plusORminus_alpha(R.id.plus_black_queen, R.id.minus_black_queen, max_queens - blackQueensNumber, max_queens);
-
                 }
                 break;
             case R.id.plus_black_rook:
@@ -322,7 +275,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             , R.id.black_rook_image,
                             create_Id(2, 5, max_rooks_bishops_knights - blackRooksNumber));
                     check_or_fix_plusORminus_alpha(R.id.plus_black_rook, R.id.minus_black_rook, max_rooks_bishops_knights - blackRooksNumber, max_rooks_bishops_knights);
-
                 }
                 break;
             case R.id.plus_black_bishop:
@@ -334,7 +286,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             , R.id.black_bishop_image,
                             create_Id(2, 3, max_rooks_bishops_knights - blackBishopsNumber));
                     check_or_fix_plusORminus_alpha(R.id.plus_black_bishop, R.id.minus_black_bishop, max_rooks_bishops_knights - blackBishopsNumber, max_rooks_bishops_knights);
-
                 }
                 break;
             case R.id.plus_black_knight:
@@ -346,7 +297,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             , R.id.black_knight_image,
                             create_Id(2, 2, max_rooks_bishops_knights - blackKnightsNumber));
                     check_or_fix_plusORminus_alpha(R.id.plus_black_knight, R.id.minus_black_knight, max_rooks_bishops_knights - blackKnightsNumber, max_rooks_bishops_knights);
-
                 }
                 break;
             case R.id.plus_black_pawn:
@@ -367,21 +317,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     whiteQueensNumber--;
                     increase_alpha(R.id.white_queen_image);
                     check_or_fix_plusORminus_alpha(R.id.plus_white_queen, R.id.minus_white_queen, max_queens - whiteQueensNumber, max_queens);
-
                 }
                 break;
             case R.id.plus_white_rook:
                 if (whiteRooksNumber > min_piece) {
                     whiteRooksNumber--;
                     increaseScoreForBlack(rook_value);
-
                     add_piece(R.drawable.white_rook, R.id.two_white_rooks,
                             max_rooks_bishops_knights - whiteRooksNumber
                             , R.id.white_rook_image,
                             create_Id(1, 5, max_rooks_bishops_knights - whiteRooksNumber));
                     check_or_fix_plusORminus_alpha(R.id.plus_white_rook, R.id.minus_white_rook, max_rooks_bishops_knights - whiteRooksNumber, max_rooks_bishops_knights);
-
-
                 }
                 break;
             case R.id.plus_white_bishop:
@@ -414,50 +360,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             max_pawns - whitePawnsNumber
                             , R.id.white_pawn_image,
                             create_Id(1, 1, max_pawns - whitePawnsNumber));
-
                     check_or_fix_plusORminus_alpha(R.id.plus_white_pawn, R.id.minus_white_pawn, max_pawns - whitePawnsNumber, max_pawns);
-
                 }
                 break;
-
-
             case R.id.reset_button:
                 reset();
                 break;
         }
-
     }
-
-
     private void increaseScoreForWhite(int increase_value) {
         score_for_white = score_for_white + increase_value;
         displayScore();
     }
-
     private void increaseScoreForBlack(int increase_value) {
         score_for_black = score_for_black + increase_value;
         displayScore();
     }
-
     private void decreaseScoreForWhite(int decrease_value) {
         score_for_white = score_for_white - decrease_value;
         displayScore();
     }
-
     private void decreaseScoreForBlack(int decrease_value) {
         score_for_black = score_for_black - decrease_value;
         displayScore();
     }
-
-
     public void displayScore()
-
     {
         white_score_view.setText(valueOf(score_for_white));
         black_score_view.setText(valueOf(score_for_black));
     }
-
-
     private void reset() {
         //variables piece number reset
         whiteQueensNumber = 1;
@@ -465,7 +396,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         whiteBishopsNumber = 2;
         whiteKnightsNumber = 2;
         whitePawnsNumber = 8;
-
         blackQueensNumber = 1;
         blackRooksNumber = 2;
         blackBishopsNumber = 2;
@@ -477,7 +407,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         black_bishop.setAlpha(lower_alpha);
         black_knight.setAlpha(lower_alpha);
         black_pawn.setAlpha(lower_alpha);
-
         white_queen.setAlpha(lower_alpha);
         white_rook.setAlpha(lower_alpha);
         white_bishop.setAlpha(lower_alpha);
@@ -488,46 +417,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             img_minus.get(i).setAlpha(lower_alpha);
             img_plus.get(i).setAlpha(higher_alpha);
         }
-
-
         for (int i = 0; i < img_ids.size(); i++) {
-
             String strId = img_ids.get(i);
             ImageView image = findViewById(Integer.parseInt(strId));
-
             try {
                 image.setId(0);
                 image.setVisibility(View.GONE);
             } catch (NullPointerException n) {
             } finally {
-
             }
-
-
         }
         score_for_white = 0;
         score_for_black = 0;
-
-
         displayScore();
         display_difference_message();
     }
-
     //methods handling piece images
-
     private void add_piece(int what_image, int layout_id,
                            int number_of_pieces, int id_of_image_to_change_its_alpha,
                            int new_piece_id)
-
-    {
-
+ {
         if (number_of_pieces == 1)
-
         {
-
             increase_alpha(id_of_image_to_change_its_alpha);
         } else {
-
             ImageView iv = new ImageView(this);
             iv.setImageResource(what_image);
             iv.setScaleX(reg_piece_xy_dimens);
@@ -539,32 +452,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             lp.weight = 1.0f;
             iv.setId(new_piece_id);
             rl.addView(iv, lp);
-
             img_ids.add(valueOf(new_piece_id));
-
-
         }
-
     }
-
     private void increase_alpha(int view_id) {
         ImageView image = findViewById(view_id);
         image.setAlpha(higher_alpha);
-
     }
-
     private void decrease_alpha(int view_id) {
         ImageView image = findViewById(view_id);
         image.setAlpha(lower_alpha);
-
-
     }
 
     // first number of id is team 1 for white, 2 for black; second is value (3 for bishop, 2 for knight); third number of added piece
 //arguments ie pawn, white, third: 113
 
     private int create_Id(int team, int piece, int number) {
-
+        
         String t = valueOf(team);
         String p = valueOf(piece);
         String n = valueOf(number);
@@ -573,86 +477,64 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return id;
     }
 
-
     private void delete_piece(int id_1st_and_2nd_number, int third_number, int id_of_image_to_change_its_alpha
     ) {
-
         String a = valueOf(id_1st_and_2nd_number);
         String b = valueOf(third_number);
-
         String c = a + b;
         int view_id = Integer.parseInt(c);
         ImageView image = findViewById(view_id);
 
-
         if (third_number == 1) {
             decrease_alpha(id_of_image_to_change_its_alpha);
-
         } else {
             img_ids.remove(valueOf(view_id));
             image.setId(0);
-
             image.setVisibility(View.GONE);
-
         }
-
-
     }
 
     private void check_or_fix_plusORminus_alpha(int plus_id, int minus_id, int numberOfPieces, int max_number_of_pieces)
-
     //also calls display_difference_message method
     {
         if (numberOfPieces == 0) {
             decrease_alpha(minus_id);
-
         } else {
             increase_alpha(minus_id);
         }
         if (numberOfPieces == max_number_of_pieces)
-
         {
             decrease_alpha(plus_id);
         } else {
             increase_alpha(plus_id);
         }
         display_difference_message();
-
     }
 
     public void display_difference_message()
-
     {
-
         whos_winning.setText(valueOf(create_difference_message()));
     }
 
-
     private String create_difference_message() //1 for white 2 for black 0 for a draw
-
     {
         int difference = count_difference();
         String who_is_winning = tell_who_is_winning();
         String d = valueOf(difference);
         String p = "";
-
         String message = "";
 
         if (difference == 1) {
             p = getString(R.string.dif_mes_point);
         } else if (difference != 0) {
             p = getString(R.string.dif_mes_points);
-
         }
         message = who_is_winning + " " + getString(R.string.dim_mes_is) + " " + d + " " + p + " " + getString(R.string.dif_mes_ahead);
         if (difference == 0) {
             message = getString(R.string.dif_mes_draw);
         }
-
         return message;
-
     }
-
 
     private String tell_who_is_winning() {
 
@@ -666,20 +548,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (score_for_black == score_for_white) {
             who = "";
         }
-
         return who;
-
     }
 
     private int count_difference() {
         int difference = abs(score_for_white - score_for_black);
-
         return difference;
-
-
     }
-
-
 }
 
 
