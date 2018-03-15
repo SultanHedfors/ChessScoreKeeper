@@ -9,7 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        
         <LinearLayout
             android:id="@+id/main_layout"
             android:layout_width="match_parent"
@@ -27,7 +27,6 @@
                     android:text="@string/white_textView" />
 
                 <TextView
-
                     style="@style/team_textView_style"
                     android:layout_marginLeft="@dimen/black_textView_marginLeft"
                     android:layout_marginRight="@dimen/black_textView_marginRight"
@@ -39,33 +38,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
+                
                 <TextView
-
                     style="@style/pieces_captured_style"
                     android:layout_marginLeft="@dimen/pieces_captured_textView_marginLeft"
                     android:gravity="left"
                     android:text="@string/black_pieces_captured_textView"
-
                     />
 
                 <TextView
-
                     style="@style/pieces_captured_style"
                     android:gravity="center_horizontal"
                     android:text="@string/white_pieces_captured_textView" />
             </LinearLayout>
 
-
             <LinearLayout
-
                 style="@style/big_layout_style">
-
 
                 <LinearLayout
                     android:id="@+id/black_pieces_layout"
                     style="@style/vertical_layout_style">
-
                     <LinearLayout
                         android:id="@+id/black_rook_line_layout"
                         style="@style/minus_piece_plus_layout_style">
@@ -75,7 +67,6 @@
                             style="@style/button_minus_style" />
 
                         <LinearLayout style="@style/piece_layout_style">
-
                             <ImageView
                                 android:id="@+id/black_queen_image"
                                 style="@style/queen_style"
@@ -85,19 +76,14 @@
                         <ImageButton
                             android:id="@+id/plus_black_queen"
                             style="@style/button_plus_style"
-
-
                             />
-
                     </LinearLayout>
-
+                    
                     <LinearLayout style="@style/minus_piece_plus_layout_style">
-
+                        
                         <ImageButton
                             android:id="@+id/minus_black_rook"
                             style="@style/button_minus_style"
-
-
                             />
 
                         <LinearLayout
@@ -108,8 +94,6 @@
                                 android:id="@+id/black_rook_image"
                                 style="@style/reg_piece_style"
                                 android:src="@drawable/black_rook"
-
-
                                 />
                         </LinearLayout>
 
@@ -152,50 +136,37 @@
                         <LinearLayout
                             android:id="@+id/two_black_knights"
                             style="@style/piece_layout_style">
-
                             <ImageView
                                 android:id="@+id/black_knight_image"
                                 style="@style/reg_piece_style"
                                 android:src="@drawable/black_knight" />
                         </LinearLayout>
-
                         <ImageButton
                             android:id="@+id/plus_black_knight"
                             style="@style/button_plus_style" />
                     </LinearLayout>
-
                     <LinearLayout
                         android:id="@+id/black_pawn_line_layout"
                         style="@style/minus_piece_plus_layout_style">
-
                         <ImageButton
                             android:id="@+id/minus_black_pawn"
                             style="@style/button_minus_style"
-
                             />
-
                         <LinearLayout
                             android:id="@+id/eight_black_pawns"
                             style="@style/piece_layout_style">
-
                             <ImageView
                                 android:id="@+id/black_pawn_image"
                                 style="@style/reg_piece_style"
                                 android:src="@drawable/black_pawn"
-
                                 />
                         </LinearLayout>
-
                         <ImageButton
                             android:id="@+id/plus_black_pawn"
                             style="@style/button_plus_style" />
                     </LinearLayout>
-
                 </LinearLayout>
-
                 <View style="@style/line2_style"></View>
-
-
                 <LinearLayout
                     android:id="@+id/black_pieces_layout"
                     style="@style/vertical_layout_style"
@@ -215,156 +186,110 @@
                                 android:id="@+id/white_queen_image"
                                 style="@style/queen_style"
                                 android:src="@drawable/white_queen"
-
                                 />
+                            
                         </LinearLayout>
-
-
                         <ImageButton
                             android:id="@+id/plus_white_queen"
                             style="@style/button_plus_style"
-
                             />
-
                     </LinearLayout>
-
                     <LinearLayout
                         android:id="@+id/white_rook_line_layout"
                         style="@style/minus_piece_plus_layout_style">
-
                         <ImageButton
                             android:id="@+id/minus_white_rook"
                             style="@style/button_minus_style"
-
-
                             />
-
                         <LinearLayout
                             android:id="@+id/two_white_rooks"
                             style="@style/piece_layout_style">
-
                             <ImageView
                                 android:id="@+id/white_rook_image"
                                 style="@style/reg_piece_style"
                                 android:src="@drawable/white_rook" />
                         </LinearLayout>
-
                         <ImageButton
                             android:id="@+id/plus_white_rook"
                             style="@style/button_plus_style" />
                     </LinearLayout>
-
                     <LinearLayout
                         android:id="@+id/white_bishop_line_layout"
                         style="@style/minus_piece_plus_layout_style">
-
                         <ImageButton
                             android:id="@+id/minus_white_bishop"
-
                             style="@style/button_minus_style" />
-
                         <LinearLayout
                             android:id="@+id/two_white_bishops"
                             style="@style/piece_layout_style">
-
                             <ImageView
                                 android:id="@+id/white_bishop_image"
                                 style="@style/reg_piece_style"
                                 android:src="@drawable/white_bishop" />
                         </LinearLayout>
-
                         <ImageButton
                             android:id="@+id/plus_white_bishop"
                             style="@style/button_plus_style" />
                     </LinearLayout>
-
-
                     <LinearLayout
                         android:id="@+id/black_white_line_layout"
                         style="@style/minus_piece_plus_layout_style">
-
                         <ImageButton
                             android:id="@+id/minus_white_knight"
                             style="@style/button_minus_style"
-
                             />
-
                         <LinearLayout
                             android:id="@+id/two_white_knights"
                             style="@style/piece_layout_style">
-
                             <ImageView
                                 android:id="@+id/white_knight_image"
                                 style="@style/reg_piece_style"
                                 android:src="@drawable/white_knight"
-
                                 />
                         </LinearLayout>
-
                         <ImageButton
                             android:id="@+id/plus_white_knight"
                             style="@style/button_plus_style" />
                     </LinearLayout>
-
                     <LinearLayout
                         android:id="@+id/white_pawn_line_layout"
                         style="@style/minus_piece_plus_layout_style">
-
                         <ImageButton
                             android:id="@+id/minus_white_pawn"
                             style="@style/button_minus_style"
-
-
                             />
-
                         <LinearLayout
                             android:id="@+id/eight_white_pawns"
                             style="@style/piece_layout_style">
-
                             <ImageView
                                 android:id="@+id/white_pawn_image"
                                 style="@style/reg_piece_style"
                                 android:src="@drawable/white_pawn" />
                         </LinearLayout>
-
                         <ImageButton
                             android:id="@+id/plus_white_pawn"
                             style="@style/button_plus_style" />
                     </LinearLayout>
-
                 </LinearLayout>
             </LinearLayout>
-
             <LinearLayout style="@style/score_layout_style">
-
                 <TextView
                     android:id="@+id/score_for_white_text_view"
-
-
                     style="@style/score_textView_style"
                     android:text="@string/_0_textView"
-
                     />
-
                 <TextView
-
                     style="@style/score_textView_style"
                     android:text="@string/dash" />
-
                 <TextView
                     android:id="@+id/score_for_black_text_view"
-
-                    style="@style/score_textView_style"
+                  style="@style/score_textView_style"
                     android:text="@string/_0_textView" />
-
-
             </LinearLayout>
-
             <TextView
                 android:id="@+id/bottom_text_view"
                 style="@style/whos_winning_textView_style"
                 android:text="@string/it_s_a_draw_textView" />
-
             <Button
 
                 android:id="@+id/reset_button"
