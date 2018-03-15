@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         img_minus.add((ImageButton) findViewById(R.id.minus_black_bishop));
         img_minus.add((ImageButton) findViewById(R.id.minus_black_knight));
         img_minus.add((ImageButton) findViewById(R.id.minus_black_pawn));
-
         //find by id and add to img_minus array list
         img_minus.add((ImageButton) findViewById(R.id.minus_white_queen));
         img_minus.add((ImageButton) findViewById(R.id.minus_white_rook));
@@ -463,12 +462,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView image = findViewById(view_id);
         image.setAlpha(lower_alpha);
     }
-
     // first number of id is team 1 for white, 2 for black; second is value (3 for bishop, 2 for knight); third number of added piece
 //arguments ie pawn, white, third: 113
 
-    private int create_Id(int team, int piece, int number) {
-        
+    private int create_Id(int team, int piece, int number) {     
         String t = valueOf(team);
         String p = valueOf(piece);
         String n = valueOf(number);
@@ -476,7 +473,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = Integer.parseInt(a);
         return id;
     }
-
     private void delete_piece(int id_1st_and_2nd_number, int third_number, int id_of_image_to_change_its_alpha
     ) {
         String a = valueOf(id_1st_and_2nd_number);
@@ -490,10 +486,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             img_ids.remove(valueOf(view_id));
             image.setId(0);
-            image.setVisibility(View.GONE);
-        }
+            image.setVisibility(View.GONE);        }
     }
-
     private void check_or_fix_plusORminus_alpha(int plus_id, int minus_id, int numberOfPieces, int max_number_of_pieces)
     //also calls display_difference_message method
     {
@@ -510,12 +504,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         display_difference_message();
     }
-
     public void display_difference_message()
     {
         whos_winning.setText(valueOf(create_difference_message()));
     }
-
     private String create_difference_message() //1 for white 2 for black 0 for a draw
     {
         int difference = count_difference();
@@ -535,9 +527,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return message;
     }
-
     private String tell_who_is_winning() {
-
         String who = "";
         if (score_for_black > score_for_white) {
             who = getString(R.string.Black);
@@ -550,7 +540,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return who;
     }
-
     private int count_difference() {
         int difference = abs(score_for_white - score_for_black);
         return difference;
