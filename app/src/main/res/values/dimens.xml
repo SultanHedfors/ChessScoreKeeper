@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!--Team textView layout dimens-->
     <dimen name="Team_textView_marginTop">16dp</dimen>
     <dimen name="Team_textView_marginBottom">10dp</dimen>
@@ -50,6 +49,4 @@
     <dimen name="reset_textSize">16sp</dimen>
     <dimen name="line2_marginLeft">8dp</dimen>
     <dimen name="line2_marginRight">8dp</dimen>
-
-
 </resources>
