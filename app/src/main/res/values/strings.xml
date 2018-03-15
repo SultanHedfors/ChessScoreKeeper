@@ -1,5 +1,4 @@
 <resources>
-
     <string name="app_name">myapp</string>
     <!--teams names-->
     <string name="white_textView">WHITE</string>
